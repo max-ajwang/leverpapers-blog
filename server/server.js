@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
 import { nanoid } from 'nanoid';
 import jwt from 'jsonwebtoken';
+import cors from 'cors';
 
 //Schema
 import User from './Schema/User.js';
@@ -12,6 +13,7 @@ import User from './Schema/User.js';
 const server = express();
 
 server.use(express.json());
+server.use(cors());
 
 const port = process.env.PORT || 5100;
 
