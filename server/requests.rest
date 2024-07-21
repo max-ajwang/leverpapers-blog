@@ -1,8 +1,0 @@
-POST http://localhost:5100/signup 
-Content-Type: application/json
-
-{
-    "fullname": "max aj",
-    "email": "max1@gmail.com",
-    "password": "Admin01"
-}
